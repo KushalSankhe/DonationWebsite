@@ -1,5 +1,5 @@
 import React from 'react'
-import img2 from './Static/img/kushal.png'
+import kushal from '../components/Static/img/kushal.png'
 
 function PeopleBehindThis() {
     return (
@@ -13,7 +13,7 @@ function PeopleBehindThis() {
             </div>
             <div className="col-md-5 d-flex justify-content-center align-items-center">
              
-              <img  className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style={{width: "300px;"}} src={{img2}} alt="" />
+              <img  className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style={{width:'300px',height:'300px'}} src={kushal} alt="" />
       
             </div>
           </div>
@@ -25,7 +25,7 @@ function PeopleBehindThis() {
               <p className="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
             </div>
             <div className="col-md-5 order-md-1">
-              <img  className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " style={{width: "300px;"}} src={{img2}} alt="" />
+              <img  className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto "style={{width:'300px',height:'300px'}} src={kushal} alt=""/>
       
             </div>
           </div>
@@ -37,13 +37,14 @@ function PeopleBehindThis() {
             </div>
             <div className="col-md-5 d-flex justify-content-center align-items-center">
              
-              <img  className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " style={{width: "300px;"}} src={{img2}} alt="" />
+              <img  className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " style={{width:'300px',height:'300px'}} src={kushal} alt="" />
       
             </div>
           </div>
 
           
       </div>
+
         </div>
         </>
     )

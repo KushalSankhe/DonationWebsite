@@ -1,6 +1,9 @@
 
 import './App.css';
-import ContactUs from './feed/ContactUs';
+import PeopleBehindThis from './feed/PeopleBehindThis';
+// import WhatWeOffer from './feed/WhatWeOffer';
+// import HowWeWork from './components/HowWeWork';
+// import ContactUs from './feed/ContactUs';
 // import DonationInfo from './components/DonationInfo';
 // import HowWeWork from './components/HowWeWork';
 // import Navbar from './components/Navbar';
@@ -12,7 +15,12 @@ function App() {
     <>
     <div >
   {/* <Index /> */}
-  <ContactUs/>
+  {/* <ContactUs/> */}
+  {/* <HowWeWork/> */}
+  {/* <WhatWeOffer/>
+  <DonationInfo/> */}
+
+  <PeopleBehindThis/>
     </div>
     </>
   );

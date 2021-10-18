@@ -1,5 +1,4 @@
 import React from 'react'
-import form from  './form-validation.js'
 
 function ContactUs() {
     return (
