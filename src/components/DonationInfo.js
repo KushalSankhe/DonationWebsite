@@ -1,8 +1,4 @@
 import React from 'react'
-import how1 from './Static/img/how1.png'
-import how2 from './Static/img/how2.png'
-import how3 from './Static/img/how3.png'
-
 import d1 from './Static/img/d1.png'
 import d2 from './Static/img/d2.png'
 import d3 from './Static/img/d3.png'
@@ -20,68 +16,6 @@ import w6 from './Static/img/w6.png'
 function DonationInfo() {
     return (
         <>
-        <div>
-            <div className="container my-4">
-      <div className="text-center">
-        <span
-          style={{
-            paddingBottom: '10px',
-            borderBottom: '4px solid #f15622',
-            lineHeight: '10px',
-            fontSize: '30px',
-          }}
-        >
-          HOW WE WORK
-        </span>
-      </div>
-      <div className="d-flex">
-        <div className="my-4">
-          <img
-            style={{marginLeft: "35px"}}
-            className="img-fluid"
-            src={how1}
-            alt=""
-          />
-          <h4 style={{textAlign: 'center', color: '#f15622'}}>Schedule a Pickup</h4>
-          <p style={{fontSize: '13px', marginLeft: '20px'}}>
-Enter the pickup location, and schedule a pickup.
-           *convenience fee applicable.
-You can also choose to go for the drop off option in 
-    case you want to drop the donations yourself.</p>
-        </div>
-        <div className="my-4">
-          <img
-            style={{marginLeft: '35px'}}
-            className="img-fluid"
-            src={how2}
-            alt=""
-          />
-          <h4 style={{textAlign: 'center', color: '#f15622'}}>
-            Donate at your Doorstep
-          </h4>
-          <p style={{fontSize: '13px', marginLeft: '20px'}}>
- We will come to your doorstep to pick up the
-donations in the chosen slot and deliver them to
- the NGO where they can be given a new life.</p>
-        </div>
-
-        <div className="my-4">
-          <img
-            style={{marginLeft: '40px'}}
-            className="img-fluid"
-            src={how3}
-            alt=""
-          />
-          <h4 style={{textAlign: 'center', color: '#f15622'}}>Get Rewards</h4>
-          <p style={{fontSize: '13px', marginLeft: '20px'}}>
-Enter the pickup location, and schedule a pickup.
-         *convenience fee applicable.
-You can also choose to go for the drop off option in 
-  case you want to drop the donations yourself.</p>
-        </div>
-      </div>
-    </div>
-
 
     <div style={{backgroundColor: '#f6f6f7', height: 'max-content', width: '100%'}}>
       <div className="text-center">
@@ -244,7 +178,7 @@ You can also choose to go for the drop off option in
         </div>
       </div>
     </div>
-       </div>
+
         </>
     )
 }
