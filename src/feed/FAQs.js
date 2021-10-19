@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function FAQs() {
     return (
         <>
@@ -17,7 +18,7 @@ function FAQs() {
       <div className="accordion-body">
           You can easily schedule a pickup on our website and we will come to your doorstep to collect your donations. Just follow the steps below and sit back!
           <ol className="list-group-numbered ">
-              <li className="mx-2">Click on the <a href="/book_now.html" style="color:#f15622; text-decoration: none;">'BOOK NOW'</a> button on this website.</li>
+              <li className="mx-2">Click on the <a href="/book_now.html" style={{color:'#f15622', textDecoration: "none"}}>'BOOK NOW'</a> button on this website.</li>
               <li className="mx-2">Put your location and choose from the pickup options available in your area.</li>
               <li className="mx-2">Select a convenient slot, fill in your details, make the payment; and your pickup is scheduled!</li>
             </ol>

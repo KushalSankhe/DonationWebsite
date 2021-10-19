@@ -1,6 +1,8 @@
 
 import './App.css';
-import PeopleBehindThis from './feed/PeopleBehindThis';
+import FAQs from './feed/FAQs';
+
+// import PeopleBehindThis from './feed/PeopleBehindThis';
 // import WhatWeOffer from './feed/WhatWeOffer';
 // import HowWeWork from './components/HowWeWork';
 // import ContactUs from './feed/ContactUs';
@@ -14,13 +16,14 @@ function App() {
   return (
     <>
     <div >
+      <FAQs/>
   {/* <Index /> */}
   {/* <ContactUs/> */}
   {/* <HowWeWork/> */}
   {/* <WhatWeOffer/>
   <DonationInfo/> */}
 
-  <PeopleBehindThis/>
+  {/* <PeopleBehindThis/> */}
     </div>
     </>
   );
