@@ -5,18 +5,18 @@ function BookNow() {
         <>
         <div>
             
-    <div class="container">
+    <div className="App">
       <div
-        class="container"
+        className="container"
         style=
           {{marginBottom: '16px',
-          backgroundClor: '#f6f6f6',
+          backgroundColor: '#f6f6f6',
           border: '1px solid #e9e9e9',
           borderRadius: '6px',
           padding:' 15px',
           height: '400px',
           width: '512px',
-          marginBottom: '20px',
+          margin: '0 0 20px 0',
           boxSizing: 'borderBox',}}
         
       >
@@ -34,9 +34,9 @@ function BookNow() {
             boxSizing: 'borderBox',
           }}
         >
-          <div class="form-check">
+          <div className="form-check">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="radio"
               name="flexRadioDefault"
               data-bs-toggle="collapse"
@@ -46,10 +46,10 @@ function BookNow() {
               aria-controls="collapseExample"
             />
             <div>
-            <label class="form-check-label"> Light Pickup (via 2-Wheeler) </label><span style={{color:"green"}}>    199/- rs </span> </div>  
+            <label className="form-check-label"> Light Pickup (via 2-Wheeler) </label><span style={{color:"green"}}>    199/- rs </span> </div>  
 
-            <div class="collapse" id="collapseExample">
-              <div class="card card-body">
+            <div className="collapse" id="collapseExample">
+              <div className="card card-body">
                 features:
 
 <p>
@@ -65,7 +65,7 @@ Accepted Items:</p>
 
 
         <div
-          class="my-3"
+          className="my-3"
           style={{
             position: 'relative',
             backgroundColor: '#e6e4e4',
@@ -77,9 +77,9 @@ Accepted Items:</p>
             boxSizing: 'borderBox',
           }}
         >
-          <div class="form-check">
+          <div className="form-check">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="radio"
               name="flexRadioDefault"
               data-bs-toggle="collapse"
@@ -88,10 +88,10 @@ Accepted Items:</p>
               aria-expanded="false"
               aria-controls="collapseExample"
             />
-            <label class="form-check-label"> Medium to Heavy Pickup </label><span style={{color:"green"}}>    699/- rs </span>
+            <label className="form-check-label"> Medium to Heavy Pickup </label><span style={{color:"green"}}>    699/- rs </span>
 
-            <div class="collapse" id="collapseExample1">
-              <div class="card card-body">
+            <div className="collapse" id="collapseExample1">
+              <div className="card card-body">
                 features:
 
 <p>
@@ -108,7 +108,7 @@ Clothes, toys, kitchen utensils, shoes, bags Furniture Mattress Home Appliances 
         </div>
 
 
-        <button type="button" class="btn btn-outline-success">Next</button>
+        <button type="button" className="btn btn-outline-success">Next</button>
         </>
     )
 }

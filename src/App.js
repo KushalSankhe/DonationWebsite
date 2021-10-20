@@ -1,6 +1,8 @@
 
 import './App.css';
-import FAQs from './feed/FAQs';
+import Navbar from './components/Navbar';
+import BookNow from './feed/BookNow';
+// import FAQs from './feed/FAQs';
 
 // import PeopleBehindThis from './feed/PeopleBehindThis';
 // import WhatWeOffer from './feed/WhatWeOffer';
@@ -16,7 +18,9 @@ function App() {
   return (
     <>
     <div >
-      <FAQs/>
+      <Navbar/>
+      <BookNow/>
+      {/* <FAQs/> */}
   {/* <Index /> */}
   {/* <ContactUs/> */}
   {/* <HowWeWork/> */}
