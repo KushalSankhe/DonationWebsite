@@ -31,11 +31,6 @@ function Navbar() {
                     Home
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/">
-                    Link
-                  </a>
-                </li>
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
@@ -54,7 +49,7 @@ function Navbar() {
                     <li>
                       <a
                         className="dropdown-item"
-                        href="people_behind_this.html"
+                        href="/peoplebd"
                       >
                         People behind this
                       </a>
@@ -65,7 +60,7 @@ function Navbar() {
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/how_we_work.html">
+                      <a className="dropdown-item" href="/howwework">
                         How we work
                       </a>
                     </li>
@@ -73,7 +68,7 @@ function Navbar() {
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/what_we_offer.html">
+                      <a className="dropdown-item" href="/whatweoffer">
                         What We Offer
                       </a>
                     </li>
@@ -81,12 +76,12 @@ function Navbar() {
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="/book_now.html">
+                  <a className="nav-link" href="/contactUS">
                     Contact Us
                   </a>
                 </li>
                 <li className="nav-item last">
-                  <a className="nav-link" href="/book_now.html">
+                  <a className="nav-link" href="/booknow">
                     Book Now
                   </a>
                 </li>
