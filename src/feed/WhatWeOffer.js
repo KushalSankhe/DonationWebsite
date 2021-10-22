@@ -1,4 +1,5 @@
 import React from 'react'
+import DonationInfo from '../components/DonationInfo'
 
 function WhatWeOffer() {
     return (
@@ -17,6 +18,7 @@ function WhatWeOffer() {
 
     </div>
         </div>
+        <DonationInfo/>
         </>
     )
 }

@@ -17,6 +17,7 @@ import HowWeWork from './components/HowWeWork';
 // import Navbar from './components/Navbar';
 import Home from './feed/Home';
 import BookNow from './feed/BookNow';
+import Footer from './components/Footer';
 // import PeopleBehindThis from './components/PeopleBehindThis';
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
       <Route path="/booknow" component={BookNow}/>
 
       </Switch>
+      <Footer/>
      </Router>
     </div>
     </>
