@@ -1,6 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 
 function NextBookNow() {
+const [user, setUSer] = useState({
+  name:"", mobileNo:"", email:"",  address:"",  donation:""
+})
+let name,value;
+const handleInputs=(event)=>{
+  console.log(event);
+  name =event.target.name;
+  value = event.target.value;
+  setUSer({...user,[name]:value})
+
+}
   return (
     <>
       <div>
@@ -9,53 +20,39 @@ function NextBookNow() {
             <h4 className="mb-3">Contact Us</h4>
             <form
               className="needs-validation justify-content-center align-items-center"
-              novalidate=""
+
             >
               <div className="row g-3">
-                <div className="col-sm-6">
+                <div className="col-sm-8">
                   <label htmlFor="firstName" className="form-label">
-                    First name
+                    Name
                   </label>
                   <input
                     type="text"
                     className="form-control"
-                    id="firstName"
+                    name="name"
+                    id="name"
                     placeholder=""
-                    value=""
+                    value={user.name}
+                    onChange={handleInputs}
                     required=""
                   />
                   <div className="invalid-feedback">
                     Valid first name is required.
                   </div>
                 </div>
-
-                <div className="col-sm-6">
-                  <label htmlFor="lastName" className="form-label">
-                    Last name
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="lastName"
-                    placeholder=""
-                    value=""
-                    required=""
-                  />
-                  <div className="invalid-feedback">
-                    Valid last name is required.
-                  </div>
-                </div>
-
                 <div className="col-sm-6">
                   <label htmlFor="number" className="form-label">
                     Mobile Number
                   </label>
                   <input
-                    type="number"
+                    type="text"
                     className="form-control"
-                    id="lastName"
+                    name="mobileNo"
+                    id="mobileNo"
                     placeholder=""
-                    value=""
+                    value={user.mobileNo}
+                    onChange={handleInputs}
                     required=""
                   />
                   <div className="invalid-feedback">Valid no.</div>
@@ -68,7 +65,10 @@ function NextBookNow() {
                   <input
                     type="email"
                     className="form-control"
+                    name="email"
                     id="email"
+                    value={user.email}
+                    onChange={handleInputs}
                     placeholder="you@example.com"
                   />
                   <div className="invalid-feedback">
@@ -84,25 +84,15 @@ function NextBookNow() {
                     type="text"
                     className="form-control"
                     id="address"
+                    name="address"
+                    value={user.address}
+                    onChange={handleInputs}
                     placeholder="1234 Main St"
                     required=""
                   />
                   <div className="invalid-feedback">
                     Please enter your address.
                   </div>
-                </div>
-                <div className="col-md-3">
-                  <label htmlFor="zip" className="form-label">
-                    Zip
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="zip"
-                    placeholder=""
-                    required=""
-                  />
-                  <div className="invalid-feedback">Zip code required.</div>
                 </div>
 
                 
@@ -116,6 +106,9 @@ function NextBookNow() {
                 <textarea
                   className="form-control"
                   id="donation"
+                  name="donation"
+                  value={user.donation}
+                  onChange={handleInputs}
                   rows="3"
                   required=""
                 ></textarea>
