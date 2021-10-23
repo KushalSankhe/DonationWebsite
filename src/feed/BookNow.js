@@ -1,83 +1,158 @@
-import React from 'react'
+import React from "react";
 
-function BookNow() {
-    return (
-        <>
-        <div>
-            
-    <div className="App">
-      <div
-        className="container"
-        style=
-          {{marginBottom: '16px',
-          backgroundColor: '#f6f6f6',
-          border: '1px solid #e9e9e9',
-          borderRadius: '6px',
-          padding:' 15px',
-          height: '400px',
-          width: '512px',
-          margin: '0 0 20px 0',
-          boxSizing: 'borderBox',}}
-        
-      >
-        <h4>Pickup From Doorstep</h4>
+function NextBookNow() {
+  return (
+    <>
+      <div>
+        <div className="container my-4 " style={{marginLeft:'200px'}}>
+          <div className="col-md-7 col-lg-8">
+            <h4 className="mb-3">Contact Us</h4>
+            <form
+              className="needs-validation justify-content-center align-items-center"
+              novalidate=""
+            >
+              <div className="row g-3">
+                <div className="col-sm-6">
+                  <label htmlFor="firstName" className="form-label">
+                    First name
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="firstName"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                  <div className="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
 
-        <div
-          style={{
-            position: 'relative',
-            backgroundColor: '#e6e4e4',
-            cursor: 'pointer',
-            display: 'block',
-            padding:  '20px',
-            border: '1px solid #cccbcb',
-            transition: 'backgroundColor 0.25s',
-            boxSizing: 'borderBox',
-          }}
-        >
-          <div className="form-check">
-            <input
-              className="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              data-bs-toggle="collapse"
-              href="#collapseExample"
-              role="button"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            />
-            <div>
-            <label className="form-check-label"> Light Pickup (via 2-Wheeler) </label><span style={{color:"green"}}>    199/- rs </span> </div>  
+                <div className="col-sm-6">
+                  <label htmlFor="lastName" className="form-label">
+                    Last name
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="lastName"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                  <div className="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
 
-            <div className="collapse" id="collapseExample">
-              <div className="card card-body">
-                features:
+                <div className="col-sm-6">
+                  <label htmlFor="number" className="form-label">
+                    Mobile Number
+                  </label>
+                  <input
+                    type="number"
+                    className="form-control"
+                    id="lastName"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                  <div className="invalid-feedback">Valid no.</div>
+                </div>
 
-<p>
-■ Upto 22 clothes (1 bag) ■ Same day pickup available
-Accepted Items:</p>
- Clothes Footwear Stationerys
+                <div className="col-12">
+                  <label htmlFor="email" className="form-label">
+                    Email{" "}
+                  </label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    placeholder="you@example.com"
+                  />
+                  <div className="invalid-feedback">
+                    Please enter a valid email for contact.
+                  </div>
+                </div>
+
+                <div className="col-12">
+                  <label htmlFor="address" className="form-label">
+                    Address
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="address"
+                    placeholder="1234 Main St"
+                    required=""
+                  />
+                  <div className="invalid-feedback">
+                    Please enter your address.
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <label htmlFor="zip" className="form-label">
+                    Zip
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="zip"
+                    placeholder=""
+                    required=""
+                  />
+                  <div className="invalid-feedback">Zip code required.</div>
+                </div>
+
+                
+              <div className="mb-3">
+                <label
+                  htmlFor="exampleFormControlTextarea1"
+                  className="form-label"
+                >
+                  What would you like to donate?
+                </label>
+                <textarea
+                  className="form-control"
+                  id="donation"
+                  rows="3"
+                  required=""
+                ></textarea>
+                <div className="invalid-feedback"></div>
               </div>
-            </div>
-          </div>
-        </div>
+              <div className="form-check" style={{marginLeft:'7px'}}>
+                  <input
+                    className="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  />
+                  <div>
+                    <label className="form-check-label">
+                      {" "}
+                      Light Pickup (via 2-Wheeler){" "}
+                    </label>
+                    <span style={{ color: "green" }}> 199/- rs </span>{" "}
+                  </div>
 
-
-
-
-        <div
-          className="my-3"
-          style={{
-            position: 'relative',
-            backgroundColor: '#e6e4e4',
-            cursor: 'pointer',
-            display: 'block',
-            padding:  '20px',
-            border: '1px solid #cccbcb',
-            transition: 'backgroundColor 0.25s',
-            boxSizing: 'borderBox',
-          }}
-        >
-          <div className="form-check">
+                  <div className="collapse" id="collapseExample">
+                    <div className="card card-body">
+                      features:
+                      <p>
+                        ■ Upto 22 clothes (1 bag) ■ Same day pickup available
+                        Accepted Items:
+                      </p>
+                      Clothes Footwear Stationerys
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="form-check">
             <input
               className="form-check-input"
               type="radio"
@@ -101,16 +176,18 @@ Clothes, toys, kitchen utensils, shoes, bags Furniture Mattress Home Appliances 
               </div>
             </div>
           </div>
+
+              <hr className="my-4" />
+
+              <button className="w-100 btn btn-primary btn-lg" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-
-        </div>
-
-
-        <button type="button" className="btn btn-outline-success">Next</button>
-        </>
-    )
+    </>
+  );
 }
 
-export default BookNow
+export default NextBookNow;

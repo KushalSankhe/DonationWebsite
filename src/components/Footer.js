@@ -43,8 +43,8 @@ function Footer() {
   <div className="col-xs-12 col-sm-6 col-md-3">
   <div className="widget no-box">
   <h5 className="widget-title">Get Started<span></span></h5>
-  <p>Get access to your full Training and Marketing Suite.</p>
-  <a className="btn" href="https://bit.ly/3m9avif" target="_blank" rel="noopener noreferrer">Subscribe Now</a>
+  <p></p>
+  <a className="btn" href="/booknow" >Book Now</a>
   </div>
   </div>
   

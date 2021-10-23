@@ -1,11 +1,12 @@
 import React from 'react'
 
 function ContactUs() {
-    return (
+    return (<>
+    <div style={{ marginLeft:'318px'}}>
         <div>
             <div className="container my-4 justify-content-center align-items-center">
       <div className="col-md-7 col-lg-8">
-        <h4 className="mb-3">Contact Us</h4>
+        <h4 className="mb-3 text-center">Contact Us</h4>
         <form className="needs-validation justify-content-center align-items-center" novalidate="">
           <div className="row g-3">
             <div className="col-sm-6">
@@ -50,7 +51,7 @@ function ContactUs() {
             </div>
 
 
-            <div className="col-md-3 my-4" >
+            <div className="col-md-3" >
               <label for="zip" className="form-label">Zip</label>
               <input type="text" className="form-control" id="zip" placeholder="" required="" />
               <div className="invalid-feedback">
@@ -60,11 +61,13 @@ function ContactUs() {
           </div>
 
 
-          <button className="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
+          <button className="w-100 btn btn-primary btn-lg my-4" type="submit">Submit</button>
         </form>
       </div>
     </div>
         </div>
+        </div>
+        </>
     )
 }
 
